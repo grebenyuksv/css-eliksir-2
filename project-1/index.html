@@ -14,10 +14,11 @@
 
         .links-wrapper {
             width: 49%;
+            text-align: center;
         }
 
-        .links {
-            margin: auto 0;
+        .link+.link {
+            margin-left: 20px;
         }
 
         @media (min-width: 1600px) {
@@ -30,11 +31,13 @@
             display: inline-block;
         }
 
-        .controls>* {
+        .search-toggle,
+        .menu-toggle {
             display: inline-block;
         }
 
         .controls {
+            text-align: right;
             float: right;
         }
 
@@ -43,24 +46,10 @@
             width: 25%;
             background: yellow;
         }
-
-        .outer {
-            background: red;
-            width: 600px;
-        }
-
-        .inner {
-            background: yellow;
-            width: 100px;
-            margin: auto;
-        }
     </style>
 </head>
 
 <body>
-    <!-- <div class="outer">
-        <div class="inner">Inner</div>
-    </div> -->
     <div class="header">
         <div class="logo">Logo</div>
         <div class="links-wrapper">

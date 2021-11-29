@@ -4,16 +4,21 @@
     <style>
         .header {
             background-color: #f3f3f3;
+            line-height: 80px;
+            height: 80px;
+            position: relative;
+            padding: 0 10px;
         }
 
         .logo,
         .links-wrapper,
         .controls {
             display: inline-block;
+            vertical-align: middle;
         }
 
         .links-wrapper {
-            width: 49%;
+            width: 48%;
             text-align: center;
         }
 
@@ -31,27 +36,88 @@
             display: inline-block;
         }
 
+        .logo {
+            background-image: url("logo.png");
+            background-position: center;
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+
         .search-toggle,
         .menu-toggle {
             display: inline-block;
+            width: 30px;
+            height: 30px;
+            background-image: url("menu.png");
+            background-size: contain;
         }
 
         .controls {
             text-align: right;
-            float: right;
+            position: relative;
+            /* float: right; */
         }
 
         .logo,
         .controls {
             width: 25%;
-            background: yellow;
+            height: 40%;
+        }
+
+        .slider {
+            height: 400px;
+            position: relative;
+        }
+
+        .slider-texts-wrapper {
+            margin: auto;
+            position: absolute;
+            bottom: 0px;
+            top: 0px;
+            height: 0px;
+            width: 100%;
+            text-align: center;
+        }
+
+        .slider-texts-line-2 {
+            font-size: 40px;
+            margin: 40px 0;
+        }
+
+        .slider-texts {
+            color: white;
+            position: relative;
+            text-align: center;
+            transform: translateY(-50%);
+            width: 70%;
+            left: 15%;
+        }
+
+        .order-button {
+            background-color: #1627b9;
+            color: inherit;
+            height: 50px;
+            width: 300px;
+            border: none;
+            border-radius: 30px;
+            cursor: pointer;
+            font-size: 20px;
+        }
+
+        .background {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            background-image: url("background.jpg");
+            background-size: cover;
+            background-position: center;
         }
     </style>
 </head>
 
 <body>
     <div class="header">
-        <div class="logo">Logo</div>
+        <div class="logo"></div>
         <div class="links-wrapper">
             <div class="links">
                 <div class="link">Про нас</div>
@@ -61,16 +127,18 @@
             </div>
         </div>
         <div class="controls">
-            <div class="search-toggle">Search</div>
-            <div class="menu-toggle">Menu</div>
+            <div class="search-toggle"></div>
+            <div class="menu-toggle"></div>
         </div>
     </div>
     <div class="slider">
         <div class="background"></div>
-        <div class="texts">
-            <div>Висока якість монтажних робіт</div>
-            <div>Виготовлення та монтаж тканинних ролет під замовлення</div>
-            <div>Замовити жалюзі</div>
+        <div class="slider-texts-wrapper">
+            <div class="slider-texts">
+                <div class="slider-texts-line-1">Висока якість монтажних робіт</div>
+                <div class="slider-texts-line-2">Виготовлення та монтаж тканинних ролет під замовлення</div>
+                <div class="slider-texts-line-3"><button class="order-button">Замовити жалюзі</button></div>
+            </div>
         </div>
     </div>
     <div class="content">Smth else</div>

@@ -1,7 +1,15 @@
 <html>
 
 <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
     <style>
+        * {
+            font-family: 'Roboto', sans-serif;
+        }
+
         .header {
             background-color: #f0f0f0;
             color: #333;
@@ -133,6 +141,21 @@
                 margin-left: 40px;
             }
         }
+
+        .photos {
+            height: 61vw;
+            text-align: center;
+        }
+
+        .photo {
+            width: 20vw;
+            height: 15vw;
+            display: inline-block; 
+            border: 1px solid black;
+            margin: 2.5vw;
+            padding: 0;
+            /*float: left;*/
+        }
     </style>
 </head>
 
@@ -155,6 +178,17 @@
                 <div class="control menu-toggle"></div>
             </div>
         </div>
+    </div>
+    <div class="photos">
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
+        <span class="photo">Photo</span>
     </div>
     <div class="slider">
         <div class="background"></div>

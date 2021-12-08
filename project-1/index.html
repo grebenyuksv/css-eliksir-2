@@ -143,18 +143,29 @@
         }
 
         .photos {
-            height: 61vw;
             text-align: center;
         }
 
         .photo {
-            width: 20vw;
-            height: 15vw;
-            display: inline-block; 
-            border: 1px solid black;
-            margin: 2.5vw;
+            background-size: cover;
+            background-position: center;
+            width: 20%;
+            height: 150px;
+            display: inline-block;
+            margin: 25px;
             padding: 0;
-            /*float: left;*/
+        }
+
+        .photo-1 {
+            background-image: url('couch.jpg');
+        }
+
+        .photo-2 {
+            background-image: url('armchair.jpg');
+        }
+
+        .photo-3 {
+            background-image: url('plant.jpg');
         }
     </style>
 </head>
@@ -180,15 +191,15 @@
         </div>
     </div>
     <div class="photos">
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
-        <span class="photo">Photo</span>
+        <span class="photo photo-1"></span>
+        <span class="photo photo-2"></span>
+        <span class="photo photo-3"></span>
+        <span class="photo photo-2"></span>
+        <span class="photo photo-3"></span>
+        <span class="photo photo-1"></span>
+        <span class="photo photo-3"></span>
+        <span class="photo photo-2"></span>
+        <span class="photo photo-1"></span>
     </div>
     <div class="slider">
         <div class="background"></div>

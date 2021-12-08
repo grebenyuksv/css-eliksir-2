@@ -167,6 +167,22 @@
         .photo-3 {
             background-image: url('plant.jpg');
         }
+
+        .car {
+            background-size: cover;
+            background-image: url('car.png');
+            width: 100vw;
+            height: 58vw;
+            position: relative;
+        }
+
+        .car::after {
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
     </style>
 </head>
 
@@ -190,6 +206,7 @@
             </div>
         </div>
     </div>
+    <div class="car"></div>
     <div class="photos">
         <span class="photo photo-1"></span>
         <span class="photo photo-2"></span>

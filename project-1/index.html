@@ -147,6 +147,7 @@
         }
 
         .photo {
+            position: relative;
             background-size: cover;
             background-position: center;
             width: 20%;
@@ -168,6 +169,31 @@
             background-image: url('plant.jpg');
         }
 
+        .photo-starred::before {
+            content: "";
+            background-image: url('star.png');
+            background-size: contain;
+            width: 40px;
+            height: 40px;
+            left: 100%;
+            top: 0;
+            transform: translate(-50%, -50%);
+            position: absolute;
+        }
+
+        .photo-information {
+            /* todo hide under :hover */
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            overflow: scroll;
+            height: 50%;
+            width: 100%;
+            left: 0;
+            top: 50%;
+            background-color: rgba(0, 0, 0, 0.3);
+        }
+
         .car {
             background-size: cover;
             background-image: url('car.png');
@@ -183,6 +209,12 @@
             width: 100%;
             background-color: rgba(0, 0, 0, 0.3);
         }
+
+        /* 
+            todo make different layout for mobile
+            e.g. 390 < screen width — lower photo height, 1 photo in row
+            e.g. 390 < screen width < 600 — 2 photos in row
+        */
     </style>
 </head>
 
@@ -206,18 +238,25 @@
             </div>
         </div>
     </div>
-    <div class="car"></div>
     <div class="photos">
+        <span class="photo photo-1 photo-starred">
+            <div class="photo-information">Information</div>
+        </span>
+        <span class="photo photo-2"></span>
+        <span class="photo photo-3 photo-starred">
+            <div class="photo-information">Veeeeery Veeeeerrrrry Loooooong Information</div>
+            <div class="photo-square">Square</div>
+        </span>
+        <span class="photo photo-2"></span>
+        <span class="photo photo-3"></span>
         <span class="photo photo-1"></span>
-        <span class="photo photo-2"></span>
         <span class="photo photo-3"></span>
-        <span class="photo photo-2"></span>
-        <span class="photo photo-3"></span>
-        <span class="photo photo-1"></span>
-        <span class="photo photo-3"></span>
-        <span class="photo photo-2"></span>
+        <span class="photo photo-2 photo-starred">
+            <div class="photo-information">Information</div>
+        </span>
         <span class="photo photo-1"></span>
     </div>
+    <div class="car"></div>
     <div class="slider">
         <div class="background"></div>
         <div class="slider-texts-wrapper">
